@@ -16,10 +16,8 @@ resources:
   - awx-admin-password-secret.yaml
   - awx-postgres-configuration.yaml
   - awx-secret-key-secret.yaml
-  # - awx-awx.yaml
+  - awx-awx.yaml
   - namespace.yaml
   - postgresql-certificate.yaml
   - postgresql-cluster.yaml
-  # - postgresql-superuser-secret.yaml
   - postgresql-tls-secret.yaml
-  # - postgresql-user-secret.yaml
