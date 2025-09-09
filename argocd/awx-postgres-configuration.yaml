@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Secret
+type: Opaque
+metadata:
+  name: awx-postgres-configuration
+  annotations:
+    custom.argocd.argoproj.io/ignore-path: ".data.*"
+data:
+  database: ""
+  host: ""
+  password: ""
+  port: ""
+  sslmode: ""
+  target_session_attrs: ""
+  type: ""
+  username: ""

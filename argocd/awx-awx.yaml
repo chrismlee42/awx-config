@@ -1,0 +1,19 @@
+apiVersion: awx.ansible.com/v1beta1
+kind: AWX
+metadata:
+  name: awx
+spec:
+  admin_user: admin
+  admin_password_secret: awx-admin-password
+  customSecrets:
+    admin:
+      enabled: true
+      secretName: awx-admin-password
+    secretKey:
+      enabled: true
+      secretName: awx-secret-key
+  name: awx
+  postgres:
+    enabled: false
+  postgres_configuration_secret: awx-postgres-configuration
+  service_type: ClusterIP

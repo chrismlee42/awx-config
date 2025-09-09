@@ -13,6 +13,9 @@ labels:
 namespace: awx
 
 resources:
+  - awx-admin-password-secret.yaml
+  - awx-postgres-configuration.yaml
+  - awx-secret-key-secret.yaml
   # - awx-awx.yaml
   - namespace.yaml
   - postgresql-certificate.yaml
